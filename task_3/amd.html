@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India | English</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Kurenaido&display=swap" rel="stylesheet"> -->
+	<script src="https://kit.fontawesome.com/cdb4175f0a.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            ;
+            }
+		
+        .navbar{
+			overflow: hidden;
+			font-family: 'Zen Maru Gothic', sans-serif;
+			}
+		
+		.navbar a {
+			float: left;
+		    font-size: 16px;
+			letter-spacing:2px;
+		    color: black;
+		    text-align: center;
+		    padding: 10px 11px;
+		    text-decoration: none;
+		    margin-top: -10px;			
+		}
+		.navbar a:hover {
+			background-color: red;
+			color:white;
+		}
+
+        * {
+			box-sizing: border-box;
+        }
+
+        header {
+			
+			padding: 20px;
+			text-align: center;
+			font-size: 25px;
+			color: black;
+			width:90%;
+			margin-left:62px;
+			margin-bottom:-30px;
+        }
+               
+        footer {
+			
+			padding: 7px;
+			text-align: center;
+			color: black;
+			font-size: 19px;
+			font-weight: bolder;
+			width:90%;
+			margin-left:62px;
+			}
+		.title
+        {
+            width:90%;
+            margin-left: 15px;
+            border:5px double blue;
+        }
+		.text{
+			font-family: 'Zen Maru Gothic'
+			font-size: 19px;
+			color: grey;
+			letter-spacing: 1px;
+		}
+		.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+		
+		.ad
+		{
+			width:90%;
+			height:250px;
+			border:green 2px solid;
+			margin-left:62px;
+			margin-top:50px;
+			border-radius:20px;
+		}
+
+		.container {
+			position: relative;
+			margin-left: 130px;
+			}
+		.overtext
+		{
+			z-index: -1;
+			position: absolute;
+			top: 165%;
+			
+		}
+
+		.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  letter-spacing: 2px;
+  
+  padding: 10px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: -28px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color:whitesmoke;
+	color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color:whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+		
+        </style>
+</head>
+<body>
+    
+	<header>
+		<div class="navbar">
+	 
+			<div class="dropdown">
+			  <button class="dropbtn" >Dropdown 
+				<i class="fa fa-caret-down"></i>
+			  </button>
+			  <div class="dropdown-content">
+				<a href="amd.html">Ahmedabad</a>
+				<a href="jaipur.html">Jaipur</a>
+			  </div>
+			</div> 
+			
+			<a href="#home">Experiences</a>
+			<a href="#news">Travel</a>
+			
+			<img src="img/logo.svg" width=150 style="margin-left:-15%;margin-top:5px;">
+			<p class="nav-item" style="float:right;margin-top:-1px;">
+			<a class="nav-link" href="#"><i class="fas fa-globe"></i></a>
+			</p>
+			<p class="nav-item active" style="float:right;margin-top:-1px;">
+			<a class="nav-link" href="#"><i class="fas fa-search"></i> | </span></a>
+			</p>
+			
+		</div>
+	
+	</header>
+<!--<audio controls autoplay>
+  <source src="bg-music.mpeg" type="audio/mpeg">
+ </audio>-->
+	<img style="width:90%;height:80%;margin-left:65px;z-index:-1;position: absolute;" src="img/alish.jpg" /> 
+	<div style="margin-top:300px;">
+		<center>
+			<font style="color:white; font-size: 120px; font-family: 'Zen Kaku Gothic Antique', sans-serif;
+			">Amdavad</font><br>
+		</center>
+	</div>
+	<div style="margin-top:320px">
+		<center><font style="color:skyblue; font-size:20px;font-family: 'Zen Kaku Gothic Antique'">Home </font>/ <font style="color:skyblue; font-size:20px;font-family: 'Zen Kaku Gothic Antique'">Destinations </font>/ <font style="color:skyblue; font-size:20px;font-family: 'Zen Kaku Gothic Antique'">Popular Destinations </font></center>
+	</div><br><br>
+	<div class="container" style="width: 20%;  background-color:;">
+		<div>
+			<input type="search" placeholder="Type here..." style="border:none;outline: none;background: none;color: black;font-size: 20px;width: 200px;float: center ;margin: 5px;">
+			<i style="margin-left: 50px; margin-top: 20px; color:grey;" class="fa fa-search"></i>
+			<hr><br>
+			<div> <i style="float:right; color: grey;" class="fa fa-chevron-down" aria-hidden="true"></i>
+				<select  style="border: none; background:none; font-size: 20px; color:grey;-webkit-appearance: none; "> 
+					<option  selected="">Experiance</option> 
+					<option selected="">Experiance</option>
+					<option selected="">Experiance</option>
+				</select>
+			</div>
+			<hr><br>
+			<div><i style="float:right; color: grey;" class="fa fa-chevron-down" aria-hidden="true"></i>
+				<select style="border: none; background:none; font-size: 20px; color:grey;-webkit-appearance: none;">
+					<option selected="">Experiance</option>
+					<option selected="">Experiance</option>
+					<option selected="">Experiance</option>
+				</select>
+			</div>
+			<hr><br>
+			<div><i style="float:right; color: grey;" class="fa fa-chevron-down" aria-hidden="true"></i>
+				<select style="border: none; background:none; font-size: 20px; color:grey; -webkit-appearance: none;">
+					<option selected="">Experiance</option>
+					<option selected="">Experiance</option>
+					<option selected="">Experiance</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="width: 63%; margin-left: 29%; margin-top:-221px;  background-color ;">
+		<div>
+			<font style="color:grey; font-size:20px;  font-family: 'Zen Kaku Gothic Antique'; margin-left:40px;">
+				Showing 10 of 45 results<br>
+			</font><hr><br>
+		</div>
+		<div>
+			<img src="img/delhi.jpeg" style="margin-top:-140px; margin-left: 20px; border:15px solid white; border-radius:5px;   width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;">
+		</div>
+		<div style="margin-top:-300px; margin-left:450px;">
+			<font style="font-size: 30px; color: grey;">
+				<a href="amd.html" style="text-decoration:none; color: grey;"> Ahmedabad</a>
+			</font>
+		</div>
+		<div style="margin-top:10px; margin-left:450px;">
+			<font style="font-size: 19px; color: grey;">
+				With old monuments and busy neighbourhoods subtly merging with a vibrant...
+			</font>
+		</div>
+		<div style="margin-top:30px; margin-left:450px;">
+			<img src="img/a1.jpg" style="height: 100px; border-radius:5px;">
+			<img src="img/a3.jpg" style="height: 100px; border-radius:5px;">
+		</div>
+
+		<div>
+			<img src="img/j.jpg" style="margin-top:110px; margin-left: 20px; border:15px solid white; border-radius:5px;   width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;">
+		</div>
+		<div style="margin-top:-300px; margin-left:450px;">
+			<font style="font-size: 30px; color: grey;">
+				<a style="text-decoration: none; color: grey;" href="jaipur.html"> Jaipur</a>
+			</font>
+		</div>
+		<div style="margin-top:10px; margin-left:450px;">
+			<font style="font-size: 19px; color: grey;">
+				The city of palaces and forts, interspersed with historical monuments and...
+			</font>
+		</div>
+		<div style="margin-top:30px; margin-left:450px;">
+			<img src="img/j1.jpeg" style="height: 100px; border-radius:5px;">
+			<img src="img/j2.jpeg" style="height: 100px; border-radius:5px;">
+			<img src="img/j3.jpg" style="height: 100px; border-radius:5px;">
+		</div>
+	</div>
+
+	<div class="container" style="margin-top: 10%;margin-left: 20%;margin-right: 20%;">
+		<h1>Register</h1>
+		<p>Please fill in this form to create an account.</p>
+		<hr>
+	
+		<label for="email"><b>Name</b></label>
+		<input type="text" placeholder="Enter Email" name="email" id="email" required>
+	
+		<label for="psw"><b>Date</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+	
+		<label for="psw-repeat"><b>Number Of Person</b></label>
+		<select name="" id="">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+			<option value="">4</option>
+			<option value="">5</option>
+		</select><br><br>
+
+		<label for="psw-repeat"><b>Conatact</b></label>
+		<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+		<label for="psw-repeat"><b>Email</b></label>
+		<input type="password" placeholder="Email" name="psw-repeat" id="psw-repeat" required>
+		<hr>
+		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+	
+		<button type="submit" class="registerbtn">Register</button>
+	  </div>
+	  
+	  <div class="container signin">
+		<p>Already have an account? <a href="#">Sign in</a>.</p>
+	  </div>
+	<div style="width:100%; background-color:rgb(20, 61, 114);letter-spacing: 1px;font-family: 'Zen Kaku Gothic Antique', sans-serif;">
+		<div style="margin-left:140px; margin-top:10px;">
+			<div style="margin-top:100px;padding-top: 35px;">
+				
+				
+
+		<font style="font-size: 19px;color: rgb(240, 224, 224);font-family: 'Zen Kaku Gothic Antique';font-family: 'Zen Kaku Gothic Antique', sans-serif;">State Tourism Websites
+			<hr color="white" width="6.5%" style="margin-left: -0.1%;">
+			<a class=footer>Andra Pradesh</a>
+			<br>
+			<a class=footer>Bihar</a><br>
+			<a class=footer>Gujarat</a><br>
+			<a class=footer>Jarkhand</a><br>
+			<a class=footer>MAdhy Pradesh</a><br>
+			<a class=footer>Meghalay</a><br>
+			<a class=footer>Odhisa</a><br>
+			<a class=footer>Sikkim</a><br>
+			<a class=footer>Tripura</a><br>
+			<a class=footer>West Bangal</a>
+		</font>
+	</div>
+		
+	
+		<div style="margin-left:280px; margin-top:-240px;">
+			<br>
+			<font style="font-size: 19px;color: rgb(240, 224, 224);font-family: 'Zen Kaku Gothic Antique', sans-serif;">
+				<a class=footer>Arunachal Pradesh</a><br>
+				<a class=footer>Chhattisgarh</a><br>
+				<a class=footer>Hariyana</a><br>
+				<a class=footer>Karnataka</a><br>
+				<a class=footer>Maharastra</a><br>
+				<a class=footer>Mizoram</a><br>
+				<a class=footer>Pamjab</a><br>
+				<a class=footer>Tamil Nadu</a><br>
+				<a class=footer>Uttar Pradesh</a>
+			</font>
+		</div>
+	
+	
+		<div style="margin-left:560px; margin-top:-220px;">
+			<br>
+			<font style="font-size: 19px;color: rgb(240, 224, 224);font-family: 'Zen Kaku Gothic Antique', sans-serif;">
+				<a class=footer>Assam</a><br>
+				<a class=footer>Goa</a><br>
+				<a class=footer>Himachal Pradesh</a><br>
+				<a class=footer>Kerala</a><br>
+				<a class=footer>Manipur</a><br>
+				<a class=footer>Nagaland</a><br>
+				<a class=footer>Rajesthan</a><br>
+				<a class=footer>Telangana</a><br>
+				<a class=footer>Uttarakhanad</a>
+			</font>
+		</div>
+	
+	
+		<div style="margin-left:790px; margin-top:-270px;">
+			<font style="font-size: 19px;color: rgb(240, 224, 224);font-family: 'Zen Kaku Gothic Antique', sans-serif;;margin-top: 30%;">UT Tourism Websites
+				<hr color="white" width="18%" style="margin-left: -0.1%;">
+				<a class=footer>Andaman and Nicobar</a><br>
+				<a class=footer>Chandigarh</a><br>
+				<a class=footer>Gujarat</a><br>
+				<a class=footer>Dadra and Nagar Haveli</a><br>
+				<a class=footer>Daman and Diu</a><br>
+				<a class=footer>Delhi</a><br>
+				<a class=footer>Jammu and Kashmir</a><br>
+				<a class=footer>Ladakh</a><br>
+				<a class=footer>Lakhshadweep</a><br>
+				<a class=footer>Puducherry</a>
+		</font>
+		</div>
+	
+		<div style="margin-left:1100px; margin-top:-270px;">
+			<font style="font-size: 19px;color: rgb(240, 224, 224);font-family: 'Zen Kaku Gothic Antique', sans-serif;">Contact Details
+				<hr color="white" width="51%" style="margin-left: -0.1%;">
+				Under Secretary (IT)<br>
+				Ministry of Tourism,<br>
+				126 Transport Bhawan<br>
+				Sansad Marg,<br>
+				New Delhi<br>
+			+91-011 23311237<br>
+			info.mot@gov.in<br>
+		</font>
+		</div>
+		<img src="img/logo1.svg" width=250 heigjt=50 style="margin-top: 9%;">
+		<audio controls autoplay style="margin-left: 500px;margin-top: -2%;">
+			  <source src="bg-music.mpeg" type="audio/mpeg">
+		</audio>
+
+		<div style="font-size: 13px;margin-right: 140px;justify-content: center;margin-top: 3%;color: rgb(240, 224, 224);">
+			<p>India has a myriad of landscapes, great heritage and culture, varied flora and fauna. The country is the most preferred tourist destinations for tourists from all across the world for its picturesque landscapes, spectacular waterfalls, habitat of the country's largest tiger reserve and home to the warmest people on earth.</p>
+		</div>
+
+		<hr color="white" width=85% style="margin-left: -10px;" size=1>
+		<br>
+		<div style="font-size: 14px;color: rgb(240, 224, 224);margin-left: 290px;font-family: 'Zen Kaku Gothic Antique', sans-serif;">
+			<a class=footer>Privacy Policy</a>|
+			<a class=footer>Terms Of Platform Use</a>|
+			<a class=footer>Important Link</a>|
+			<a class=footer>Emergency</a>
+		</div>
+		<div style="font-size: 14px;color: rgb(240, 224, 224);margin-left: 350px;font-family: 'Zen Kaku Gothic Antique', sans-serif;">
+			@Ministry of Tourism, Government of India
+			<br>
+			<br>
+		</div>
+	</div>
+		
+	
+
+
+</body>
+</html>
